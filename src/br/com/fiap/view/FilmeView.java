@@ -19,7 +19,7 @@ public class FilmeView {
         FilmeController filmeController = new FilmeController();
         do {
             try {
-                opcao = JOptionPane.showOptionDialog(null, "Escolha uma das opções abaixo para manipular um Cliente", "Escolha", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, escolha, escolha[0]);
+                opcao = JOptionPane.showOptionDialog(null, "Escolha uma das opções abaixo para manipular um Filme", "Escolha", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, escolha, escolha[0]);
                 switch (opcao) {
                     case 0:
                         titulo = JOptionPane.showInputDialog("Digite o titulo do filme");
