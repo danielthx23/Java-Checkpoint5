@@ -1,7 +1,15 @@
 package br.com.fiap.view;
 
+import br.com.fiap.controller.FilmeController;
+
 import javax.swing.*;
 
+/**
+ * @author Daniel Saburo Akiyama / RM: 558263
+ * @author João Vitor Di Re / RM: 554749
+ * @author Marcus Vila Nova da Silva / RM:
+ * @author João Pedro R. / RM: 558199
+ */
 public class FilmeView {
     public static void main(String[] args) {
         int codigo;
@@ -24,7 +32,7 @@ public class FilmeView {
                         titulo = JOptionPane.showInputDialog("Digite o NOVO titulo do filme");
                         genero = JOptionPane.showInputDialog("Digite o NOVO genero do filme");
                         produtora = JOptionPane.showInputDialog("Digite a NOVA produtora do filme");
-                        System.out.println(filmeController.alterarFilme(codigo, titulo, genero, produtora);
+                        System.out.println(filmeController.alterarFilme(codigo, titulo, genero, produtora));
                         break;
                     case 2:
                         codigo = Integer.parseInt(JOptionPane.showInputDialog("Digite o código do filme"));
@@ -36,7 +44,7 @@ public class FilmeView {
                     default:
                         System.out.println("Opção inválida!");
                 }
-            } catch (Exception e) {
+        } catch (Exception e) {
                 System.out.println("Erro: " + e.getMessage());
             }
         } while (JOptionPane.showConfirmDialog(null, "Deseja continuar?", "Atenção", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE) == 0);
