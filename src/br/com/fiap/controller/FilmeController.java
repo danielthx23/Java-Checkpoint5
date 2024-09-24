@@ -11,7 +11,7 @@ import java.util.ArrayList;
 /**
  * @author Daniel Saburo Akiyama / RM: 558263
  * @author João Vitor Di Re / RM: 554749
- * @author Marcus Vila Nova da Silva / RM:
+ * @author Marcus Vila Nova / RM:
  * @author João Pedro R. / RM: 558199
  */
 public class FilmeController {
