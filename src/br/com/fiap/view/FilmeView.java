@@ -1,5 +1,7 @@
 package br.com.fiap.view;
 
+import br.com.fiap.controller.FilmeController;
+
 import javax.swing.*;
 
 public class FilmeView {
@@ -24,7 +26,7 @@ public class FilmeView {
                         titulo = JOptionPane.showInputDialog("Digite o NOVO titulo do filme");
                         genero = JOptionPane.showInputDialog("Digite o NOVO genero do filme");
                         produtora = JOptionPane.showInputDialog("Digite a NOVA produtora do filme");
-                        System.out.println(filmeController.alterarFilme(codigo, titulo, genero, produtora);
+                        System.out.println(filmeController.alterarFilme(codigo, titulo, genero, produtora));
                         break;
                     case 2:
                         codigo = Integer.parseInt(JOptionPane.showInputDialog("Digite o código do filme"));
